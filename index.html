@@ -1354,10 +1354,7 @@
       </div>
       <script>
         function gachiLoadVideo(card, url) {
-          var src = 'https://www.facebook.com/plugins/video.php?href=' + encodeURIComponent(url) + '&show_text=false&width=560&height=315';
-          card.innerHTML = '<iframe src="' + src + '" width="100%" height="315" style="border:none;overflow:hidden;display:block;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>';
-          card.style.padding = '0';
-          card.onclick = null;
+          window.open(url, '_blank');
         }
       </script>
 
