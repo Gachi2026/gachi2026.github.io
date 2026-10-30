@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gachigotcha.com/sitemap.xml
