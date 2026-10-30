@@ -979,6 +979,12 @@
     .gachi-chat-input { display: flex; border-top: 1px solid var(--light); }
     .gachi-chat-input input { flex: 1; border: none; padding: 0.8rem 1rem; font-size: 0.92rem; outline: none; }
     .gachi-chat-input button { background: var(--orange); color: var(--white); border: none; padding: 0 1.1rem; font-weight: 700; cursor: pointer; }
+    /* ── FACEBOOK VIDEO CARDS ── */
+    .fb-video-card { background: var(--black); color: var(--white); border-radius: 4px; padding: 1.25rem 1rem; text-align: center; cursor: pointer; display: flex; flex-direction: column; gap: 0.35rem; align-items: center; }
+    .fb-video-card:hover { outline: 2px solid var(--orange); }
+    .fb-video-card .video-icon { font-size: 1.6rem; color: var(--orange); }
+    .fb-video-card .slot-text { font-weight: 700; }
+    .fb-video-card .slot-sub { font-size: 0.8rem; color: rgba(255,255,255,0.7); }
   </style>
 </head>
 <body>
@@ -1281,7 +1287,7 @@
     <div class="gallery-inner">
       <div class="section-eyebrow">Our Work</div>
       <h2 class="section-title">Before & After · Completed Projects · Videos</h2>
-      <p class="gallery-lead">Real jobs. Real results. Upload your project photos and videos here to show customers what GaChi can do.</p>
+      <p class="gallery-lead">Real jobs. Real results — watch GaChi at work.</p>
 
       <!-- BEFORE & AFTER -->
       <div class="gallery-label">Before & After</div>
@@ -1330,17 +1336,30 @@
       <!-- VIDEOS -->
       <div class="gallery-label">Videos</div>
       <div class="video-grid">
-        <div class="video-slot">
-          <span class="video-icon">▶</span>
-          <span class="slot-text">Paste YouTube or TikTok link here</span>
-          <span class="slot-sub">Replace this div with an iframe embed</span>
-        </div>
-        <div class="video-slot">
-          <span class="video-icon">▶</span>
-          <span class="slot-text">Paste YouTube or TikTok link here</span>
-          <span class="slot-sub">Replace this div with an iframe embed</span>
-        </div>
+        <div class="fb-video-card" onclick="gachiLoadVideo(this, 'https://facebook.com/reel/1775877043416145/')"><span class="video-icon">▶</span><span class="slot-text">Crawlspace mold &amp; HVAC duct cleanup</span><span class="slot-sub">September 2026 · Watch on Facebook</span></div>
+        <div class="fb-video-card" onclick="gachiLoadVideo(this, 'https://facebook.com/reel/28000413809575577/')"><span class="video-icon">▶</span><span class="slot-text">Doing the work</span><span class="slot-sub">July 2026 · Watch on Facebook</span></div>
+        <div class="fb-video-card" onclick="gachiLoadVideo(this, 'https://facebook.com/reel/1612641776867053/')"><span class="video-icon">▶</span><span class="slot-text">Done right the first time</span><span class="slot-sub">June 2026 · Watch on Facebook</span></div>
+        <div class="fb-video-card" onclick="gachiLoadVideo(this, 'https://facebook.com/reel/1544380090664181/')"><span class="video-icon">▶</span><span class="slot-text">GaChi at work</span><span class="slot-sub">June 2026 · Watch on Facebook</span></div>
+        <div class="fb-video-card" onclick="gachiLoadVideo(this, 'https://facebook.com/reel/1008199431760107/')"><span class="video-icon">▶</span><span class="slot-text">GaChi at work</span><span class="slot-sub">June 2026 · Watch on Facebook</span></div>
+        <div class="fb-video-card" onclick="gachiLoadVideo(this, 'https://facebook.com/reel/990253040371168/')"><span class="video-icon">▶</span><span class="slot-text">GaChi at work</span><span class="slot-sub">June 2026 · Watch on Facebook</span></div>
+        <div class="fb-video-card" onclick="gachiLoadVideo(this, 'https://facebook.com/reel/1506367691234291/')"><span class="video-icon">▶</span><span class="slot-text">Bathtub brought back to life</span><span class="slot-sub">June 2026 · Watch on Facebook</span></div>
+        <div class="fb-video-card" onclick="gachiLoadVideo(this, 'https://facebook.com/reel/2112315696214752/')"><span class="video-icon">▶</span><span class="slot-text">Clogged sink fix</span><span class="slot-sub">April 2026 · Watch on Facebook</span></div>
+        <div class="fb-video-card" onclick="gachiLoadVideo(this, 'https://facebook.com/reel/4084793408321462/')"><span class="video-icon">▶</span><span class="slot-text">Laundry room floor tile</span><span class="slot-sub">March 2026 · Watch on Facebook</span></div>
+        <div class="fb-video-card" onclick="gachiLoadVideo(this, 'https://facebook.com/reel/1277691947668190/')"><span class="video-icon">▶</span><span class="slot-text">Garage epoxy floor</span><span class="slot-sub">March 2026 · Watch on Facebook</span></div>
+        <div class="fb-video-card" onclick="gachiLoadVideo(this, 'https://facebook.com/reel/1485691719571224/')"><span class="video-icon">▶</span><span class="slot-text">Grinding work</span><span class="slot-sub">March 2026 · Watch on Facebook</span></div>
+        <div class="fb-video-card" onclick="gachiLoadVideo(this, 'https://facebook.com/reel/827195329723504/')"><span class="video-icon">▶</span><span class="slot-text">Unit &amp; house turns, fast</span><span class="slot-sub">March 2026 · Watch on Facebook</span></div>
+        <div class="fb-video-card" onclick="gachiLoadVideo(this, 'https://facebook.com/reel/26437455525882705/')"><span class="video-icon">▶</span><span class="slot-text">Call GaChi</span><span class="slot-sub">March 2026 · Watch on Facebook</span></div>
+        <div class="fb-video-card" onclick="gachiLoadVideo(this, 'https://facebook.com/reel/921892053987366/')"><span class="video-icon">▶</span><span class="slot-text">Teaching on the job</span><span class="slot-sub">March 2026 · Watch on Facebook</span></div>
+        <div class="fb-video-card" onclick="gachiLoadVideo(this, 'https://facebook.com/reel/1418214429548344/')"><span class="video-icon">▶</span><span class="slot-text">Driveway &amp; home wash</span><span class="slot-sub">March 2026 · Watch on Facebook</span></div>
       </div>
+      <script>
+        function gachiLoadVideo(card, url) {
+          var src = 'https://www.facebook.com/plugins/video.php?href=' + encodeURIComponent(url) + '&show_text=false&width=560&height=315';
+          card.innerHTML = '<iframe src="' + src + '" width="100%" height="315" style="border:none;overflow:hidden;display:block;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>';
+          card.style.padding = '0';
+          card.onclick = null;
+        }
+      </script>
 
     </div>
   </section>
